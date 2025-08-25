@@ -1,0 +1,11 @@
+name: Fitsr WorkFlow
+on:  #When push a code to a branch
+  push: 
+    branches:  
+      - main 
+jobs: 
+  triggerjob:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print welcome message
+        run: echo "Welcome to the trigger of CI/CD Pipeline"
