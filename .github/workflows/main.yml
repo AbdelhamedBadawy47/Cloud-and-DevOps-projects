@@ -9,3 +9,8 @@ jobs:
     steps: 
       - name: Print welcome message
         run: echo "Welcome to the trigger of CI/CD Pipeline"
+      - name:  Checkout repository  
+        uses:  actions/checkout@v5.0.0
+      - name: List repositroy Files
+        run: ls -la
+    
